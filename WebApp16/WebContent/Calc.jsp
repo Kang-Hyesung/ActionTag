@@ -14,8 +14,9 @@
 </div>
 
 <div>
-	<form action="">
-		<table>
+	<!-- 첫 번째 방법 -->
+	<form action="Calc_ok1.jsp" method="post" name="myForm">
+		<table class="table">
 			<tr>
 				<th>첫 번재 정수</th>
 				<td>
