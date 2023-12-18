@@ -31,7 +31,11 @@
 		// 또는, 생성 구문에 직접 com.test.Calc ob = new com.test.Calc();
 		// 와 같이 작성하는 것도 가능함.
 		
+		ob.setSu1(su1);
+		ob.setSu2(su2);
+		ob.setOp(op);
 		
+		str = ob.result();
 	}
 	
 %>
@@ -45,5 +49,35 @@
 </head>
 <body>
 
+<div>
+	<h1>첫 번째 방법 처리결과</h1>
+	<hr />
+</div>
+
+<div>
+	<!-- 결과 -->
+	<h2><%=str %></h2>
+</div>
+
 </body>
 </html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
