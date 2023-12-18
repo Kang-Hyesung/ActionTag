@@ -6,6 +6,16 @@
 <jsp:useBean id="ob" class="com.test.FriendDTO"></jsp:useBean>
 <jsp:setProperty property="*" name="ob"/>
 
+<%
+	String str1 = "";
+	if(ob.getCheckGroup() != null)
+	{
+		for(String temp : ob.getCheckGroup())
+		{
+			str1 += temp + " ";
+		}
+	}
+%>
 
 <!DOCTYPE html>
 <html>
@@ -21,18 +31,18 @@
 	<hr />
 </div>
 
-<div>
+<!-- <div>
 	<h2>이름 : 홍길동</h2>
 	<h2>나이 : 23</h2>
 	<h2>성별 : 남자</h2>
 	<h2>이상형 : 한소희 정해인</h2>
-</div>
+</div> -->
 
 <div>
 	<h2>이름 : <%=ob.getName()%></h2>
 	<h2>나이 : <%=ob.getAge() %></h2>
 	<h2>성별 : <%=ob.getGender() %></h2>
-	<h2><%=ob %>
+	<h2>
 	<%for(String str : ob.getCheckGroup())
 	{
 	%>

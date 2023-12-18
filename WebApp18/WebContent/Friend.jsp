@@ -6,7 +6,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Insert title here</title>
+<title>Friend.jsp</title>
 
 <script type="text/javascript">
 	function sendIt()
@@ -18,17 +18,8 @@
 		if(name.value == "")
 		{
 			alert("이름을 입력해 주세요");
-			return
-		}
-		
-		if(age.value == "")
-		{
-			alert("나이를 입력해 주세요");
-		}
-		
-		if(gender.value == "")
-		{
-			alert("성별을 선택해 주세요");
+			name.focus();
+			return;
 		}
 		
 		myForm.submit();
@@ -55,17 +46,17 @@
 				<td><input type="text" class="txt" name="name" id="name"/></td>
 			</tr>
 			<tr>
-				<th>나이*</th>
+				<th>나이</th>
 				<td><input type="text" class="txt" name="age" id="age"/></td>
 			</tr>
 			<tr>
-				<th>성별*</th>
+				<th>성별</th>
 				<td>
 					<label>
-						<input type="radio" name="gender" value="m" id="gender"> 남자
+						<input type="radio" name="gender" value="남자" id="gender"> 남자
 					</label>
 					<label>
-						<input type="radio" name="gender" value="f" id="gender"> 여자
+						<input type="radio" name="gender" value="여자" id="gender"> 여자
 					</label>
 				</td>
 			</tr>

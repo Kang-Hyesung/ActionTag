@@ -5,9 +5,7 @@ import java.util.ArrayList;
 public class FriendDTO
 {
 	private String name,age,gender;
-	/* ArrayList<String> checkGroup = new ArrayList<String>(); */
-	String[] checkGroup;
-	
+	private String[] checkGroup;	
 	
 	public String[] getCheckGroup()
 	{
@@ -17,25 +15,6 @@ public class FriendDTO
 	public void setCheckGroup(String[] checkGroup)
 	{
 		this.checkGroup = checkGroup;
-	}
-
-	String str = "";
-
-
-	@Override
-	public String toString()
-	{
-		return name + age + gender + printArr();
-	}
-
-	public String getStr()
-	{
-		return str;
-	}
-
-	public void setStr(String str)
-	{
-		this.str = str;
 	}
 
 	public String getName()
@@ -66,14 +45,5 @@ public class FriendDTO
 	public void setGender(String gender)
 	{
 		this.gender = gender;
-	}
-	
-	public String printArr()
-	{
-		for (int i = 0; i < checkGroup.length; i++)
-		{
-			str += checkGroup[i] + " ";
-		}
-		return str;
 	}
 }
