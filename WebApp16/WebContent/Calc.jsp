@@ -15,7 +15,10 @@
 
 <div>
 	<!-- 첫 번째 방법 -->
-	<form action="Calc_ok1.jsp" method="post" name="myForm">
+	<!-- <form action="Calc_ok1.jsp" method="post" name="myForm"> -->
+	
+	<!-- 두 번째 방법 -->
+	<form action="Calc_ok2.jsp" method="post" name="myForm">
 		<table class="table">
 			<tr>
 				<th>첫 번재 정수</th>
