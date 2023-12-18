@@ -8,5 +8,45 @@
 </head>
 <body>
 
+<div>
+	<h1>JSP 액션 태그 실습</h1>
+	<hr />
+</div>
+
+<div>
+	<form action="">
+		<table>
+			<tr>
+				<th>첫 번재 정수</th>
+				<td>
+					<input type="text" name="su1" class="txt">
+				</td>
+			</tr>
+			<tr>
+				<th>연산자</th>
+				<td>
+					<select name="op">
+						<option value="+">더하기</option>
+						<option value="-">빼기</option>
+						<option value="*">곱하기</option>
+						<option value="/">나누기</option>
+					</select>
+				</td>
+			</tr>
+			<tr>
+				<th>두 번재 정수</th>
+				<td>
+					<input type="text" name="su2" class="txt">
+				</td>
+			</tr>
+			<tr>
+				<td colspan="2">
+					<button type="submit" class="btn" styel="width: 100%;"> = </button>
+				</td>
+			</tr>
+		</table>
+	</form>
+</div>
+
 </body>
 </html>
