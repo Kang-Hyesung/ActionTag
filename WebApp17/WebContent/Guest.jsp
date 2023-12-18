@@ -9,6 +9,12 @@
 function func()
 {
 	myForm.submit();
+	
+	var f = document.myForm;
+	
+	// 체크 및 검증 코드 작성 가능
+	
+	f.submit();
 }
 </script>
 
@@ -27,13 +33,15 @@ function func()
 			<tr>
 				<th>이름</th>
 				<td>
-					<input type="text" class="txt" name="name">
+					<!-- <input type="text" class="txt" name="name"> -->
+					<input type="text" class="txt" name="userName">
 				</td>
 			</tr>
 			<tr>
 				<th>제목</th>
 				<td>
-					<input type="text" class="txt" name="title">
+					<!-- <input type="text" class="txt" name="title"> -->
+					<input type="text" class="txt" name="subject">
 				</td>
 			</tr>
 			<tr>

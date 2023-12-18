@@ -1,6 +1,7 @@
 <%@ page contentType="text/html; charset=UTF-8"%>
 
-<jsp:useBean id="ob" class="com.test.GuestDTO"></jsp:useBean>
+<jsp:useBean id="ob" class="com.test.GuestDTO" scope="page"></jsp:useBean>
+<!-- page가 default 값 -->
 <jsp:setProperty property="*" name="ob"/>
 
 <%
@@ -11,7 +12,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Insert title here</title>
+<title>Guest_ok.jsp</title>
 <link rel="stylesheet" type="text/css" href="css/main.css">
 </head>
 <body>
@@ -28,14 +29,21 @@
 	<h3>내용 : 이러쿵 저러쿵 궁시렁 궁시렁</h3>
 </div> -->
 
-<div>
+<%-- <div>
 	<h2>작성된내용</h2>
 	<h3>이름 : <%=ob.getName() %></h3>
 	<h3>제목 : <%=ob.getTitle() %></h3>
 	<h3>내용 : <%=ob.getContent() %></h3>
-</div>
+</div> --%>
 
-<%=ob %>
+<div>
+	<h2>작성된내용</h2>
+	<h3>이름 : <%=ob.getUserName() %></h3>
+	<h3>제목 : <%=ob.getSubject() %></h3>
+	<h3>내용 : <%=ob.getContent().replaceAll("\n", "<br>") %></h3>
+</div> 
+
+
 
 </body>
 </html>
