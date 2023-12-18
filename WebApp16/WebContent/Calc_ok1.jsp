@@ -12,7 +12,7 @@
 	su1 = su2 = 0;
 	String str = "";
 	
-	if(strSu1==null || strSu2==null)
+	if(strSu1.equals("") || strSu2.equals("") || strSu1==null || strSu2==null)
 	{
 		response.sendRedirect("Calc.jsp");
 	}
